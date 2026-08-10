@@ -66,5 +66,4 @@ jobs:
             exit 0
           fi
           npm install -g @railway/cli
-          railway link --project "$RAILWAY_PROJECT_ID" --service "$RAILWAY_SERVICE_ID"
-          railway up --detach
+          railway up --project "$RAILWAY_PROJECT_ID" --service "$RAILWAY_SERVICE_ID" --detach
