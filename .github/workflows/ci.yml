@@ -66,4 +66,5 @@ jobs:
             exit 0
           fi
           npm install -g @railway/cli
-          railway up --project "$RAILWAY_PROJECT_ID" --service "$RAILWAY_SERVICE_ID" --detach
+          railway whoami || echo "whoami failed (co the binh thuong voi Project Token) - tiep tuc"
+          railway up --project "$RAILWAY_PROJECT_ID" --service "$RAILWAY_SERVICE_ID" --environment production --yes --detach
